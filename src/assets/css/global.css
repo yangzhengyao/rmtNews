@@ -1,0 +1,113 @@
+* {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    
+}
+@font-face {
+    font-family: 'sc';  /* project id 271013 */
+    /* src: url('../fonts/SC-Regular.otf'); */
+    src: url('../fonts/SourceHanSerifCN-Medium-6.otf');
+}
+/* 铁门字体 */
+.listItem .big_title>h3,.listItem .title>h3,.service-box h1,.service-box h3,.article_info>h1,.article_content *{
+    font-family: 'sc' !important;
+}
+.service-box h1{
+    font-weight: 600 !important
+}
+ input{-webkit-user-select:auto;}
+.content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* padding-top: 1.335rem; */
+}
+.content.isIOS {
+    padding-top: 1.87rem;
+    padding-top: 1.335rem;
+}
+.container{
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+}
+.mint-toast-text{
+    font-size: .28rem !important;
+}
+.mint-toast{
+    padding: .2rem !important;
+}
+.bottomLoad{
+    width: 100%;
+    position: relative;
+    background: transparent;
+}
+.error_text{
+    margin-bottom: .2rem;
+    font-size: .33rem;
+    margin-top: .09rem;
+}
+.bottomLoad div{
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #999;
+    background: transparent;
+}
+.mint-indicator-wrapper{
+    z-index: 1001;
+}
+.mint-button{
+    font-size:.36rem;
+    height:.8rem;
+}
+.mint-button--normal{
+    padding: 0 .24rem;
+}
+section:last-of-type .topFooter{
+    border: none!important;
+}
+.VueStar__ground{
+    width: 0px;
+    position: relative;
+    top: -0.24rem;
+    left: .15rem;
+}
+.VueStar__ground i{
+        color: #9f9f9f;
+}
+.VueStar__decoration{
+      width: 2rem;
+      height: 2rem;
+      left: -.8rem;
+      top: .2rem;
+}
+#certificate .iphonexPaddingClass,
+#questions .iphonexPaddingClass {
+    height: 1.8rem !important;
+    padding-bottom:40px !important;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 271013 */
+    src: url('//at.alicdn.com/t/font_271013_0i7o62h41ose.eot');
+    src: url('//at.alicdn.com/t/font_271013_0i7o62h41ose.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_271013_0i7o62h41ose.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_271013_0i7o62h41ose.woff') format('woff'),
+    url('//at.alicdn.com/t/font_271013_0i7o62h41ose.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_271013_0i7o62h41ose.svg#iconfont') format('svg');
+  }
+ .iconfont {
+  font-family: "iconfont" !important;
+  font-size: 12px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+} 
+ 

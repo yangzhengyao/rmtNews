@@ -1,0 +1,369 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H5E9BCAC1",
+	"name": "hongqiApp",
+	"version": {
+		"name": "1.0.0",
+		"code": "20302"
+	},
+	"description": "融媒体app",
+	"icons": {
+		"144": "icon.png"
+	},
+	"launch_path": "index.html",
+	"developer": {
+		"name": "zhiyiwei",
+		"email": "",
+		"url": ""
+	},
+	"orientation": [
+		"portrait"
+	],
+	"permissions": {
+		"Accelerometer": {
+			"description": "加速度传感器"
+		},
+		"Audio": {
+			"description": "音频录制与播放"
+		},
+		"Cache": {
+			"description": "缓存管理"
+		},
+		"Camera": {
+			"description": "摄像头"
+		},
+		"Console": {
+			"description": "调试输出日志"
+		},
+		"Contacts": {
+			"description": "系统通讯录"
+		},
+		"Device": {
+			"description": "设备信息"
+		},
+		"Downloader": {
+			"description": "文件下载"
+		},
+		"Events": {
+			"description": "扩展事件"
+		},
+		"File": {
+			"description": "本地文件系统"
+		},
+		"Gallery": {
+			"description": "系统相册"
+		},
+		"Geolocation": {
+			"description": "位置信息"
+		},
+		"Invocation": {
+			"description": "Native.js能力"
+		},
+		"Messaging": {
+			"description": "消息通讯"
+		},
+		"Orientation": {
+			"description": "方向传感器"
+		},
+		"Proximity": {
+			"description": "距离传感器"
+		},
+		"Storage": {
+			"description": "本地数据存储"
+		},
+		"Webview": {
+			"description": "窗口管理"
+		},
+		"NativeObj": {
+			"description": "原生控件"
+		},
+		"NativeUI": {
+			"description": "原生UI控件"
+		},
+		"Navigator": {
+			"description": "浏览器信息"
+		},
+		"Uploader": {
+			"description": "文件上传"
+		},
+		"Runtime": {
+			"description": "运行环境"
+		},
+		"XMLHttpRequest": {
+			"description": "跨域网络请求"
+		},
+		"Zip": {
+			"description": "压缩与解压"
+		},
+		"Barcode": {
+			"description": "二维码扫描"
+		},
+		"VideoPlayer": {
+			"description": "视频播放"
+		},
+		"LivePusher": {
+			"description": "直播推流"
+		},"Maps":{},"Share":{},"OAuth":{},"Speech":{},"Payment":{},"Statistic":{},"Fingerprint":{}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,
+			"waiting": true
+		},
+		"statusbar": {
+			"immersed": true,
+			"background": "#D74B28"
+		},
+		"popGesture": "close",
+		"runmode": "liberate",
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",
+		"distribute": {
+			"apple": {
+				"appid": "",
+				"mobileprovision": "",
+				"password": "",
+				"p12": "",
+				"devices": "iphone",
+				"urlschemewhitelist": [
+					"baidumap",
+					"iosamap"
+				],
+				"UIReserveStatusbarOffset":false,
+				"UIStatusBarStyle":"UIStatusBarStyleBlackOpaque",
+				"shortcuts": [
+					{
+						"type": "share",
+						"title": "分 享",
+						"subtitle": "分享到微信、微博、QQ",
+						"icontype": "UIApplicationShortcutIconTypeShare"
+					}, {
+						"type": "about",
+						"title": "关 于",
+						"subtitle": "www.dcloud.io",
+						"iconfile": "sa.png",
+						"userinfo": {
+							"key3": "value3"
+						}
+					}
+				],
+				"frameworks": [],
+				"plistcmds": [
+					"Set :NSCameraUsageDescription 拍照/摄像/扫描二维码",
+					"Set :NSMicrophoneUsageDescription 录制音频文件/语音识别",
+					"Set :NSPhotoLibraryUsageDescription 选择/保存图片",
+					"Set :NSLocationWhenInUseUsageDescription 获取位置信息"
+				]
+			},
+			"google": {
+				"packagename": "",
+				"keystore": "",
+				"password": "",
+				"aliasname": "",
+				"permissions": ["<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission  android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.SEND_SMS\"/>","<uses-permission android:name=\"android.permission.INTERNET\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.RECEIVE_USER_PRESENT\"/>","<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>","<uses-permission android:name=\"android.permission.USE_FINGERPRINT\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>","<uses-permission android:name=\"android.permission.WRITE_SMS\"/>","<uses-permission android:name=\"android.permission.READ_SMS\"/>"]
+			},
+			"orientation": [
+				"portrait-primary"
+			],
+			"icons": {
+				"ios": {
+					"appstore": "",
+					"iphone": {
+						"app@2x": "",
+						"app@3x": "",
+						"spotlight@2x": "",
+						"spotlight@3x": "",
+						"settings@2x": "",
+						"settings@3x": "",
+						"notification@2x": "",
+						"notification@3x": ""
+					},
+					"ipad": {
+						"app": "",
+						"app@2x": "",
+						"proapp@2x": "",
+						"spotlight": "",
+						"spotlight@2x": "",
+						"settings": "",
+						"settings@2x": "",
+						"notification": "",
+						"notification@2x": ""
+					}
+				},
+				"android": {
+					"mdpi": "",
+					"ldpi": "",
+					"hdpi": "",
+					"xhdpi": "",
+					"xxhdpi": ""
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "",
+						"retina35": "",
+						"retina40": "",
+						"retina47": "",
+						"retina55": "",
+						"retina55l": "",
+						"iphonex": "",
+						"iphonexl": ""
+					},
+					"ipad": {
+						"portrait": "",
+						"portrait-retina": "",
+						"landscape": "",
+						"landscape-retina": "",
+						"portrait7": "",
+						"portrait-retina7": "",
+						"landscape7": "",
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "",
+					"ldpi": "",
+					"hdpi": "",
+					"xhdpi": "",
+					"xxhdpi": ""
+				}
+			},
+			"plugins": {
+				"statics": {"umeng":{"appkey_ios":"","channelid_ios":"","appkey_android":"","channelid_android":""}},
+				"maps": {"amap":{"appkey_ios":"","appkey_android":"","description":""}},
+				"push": {},
+				"share": {"qq":{"appid":"101534011","description":"QQ分享"},"sina":{"appkey":"3799869903","appsecret":"d6e4f6c76d42f2bb4ffb54b6a5aba9d9","redirect_uri":"https://api.weibo.com/oauth2/default.html","description":"可选，新浪微博分享"},"weixin":{"appid":"","appsecret":"","description":"可选，微信分享"}},
+				"payment": {"weixin":{"description":"微信支付","appid":""},"alipay":{"description":"阿里支付","scheme":""},"appleiap":{"description":"Apple应用内支付"}},
+				"oauth": {"qq":{"appid":"101534011"},"sina":{"appkey":"3799869903","appsecret":"d6e4f6c76d42f2bb4ffb54b6a5aba9d9","redirect_uri":"https://api.weibo.com/oauth2/default.html"},"weixin":{"appid":"","appsecret":""}}
+			}
+		}
+	},
+	"dependencies": {
+		"pages": {
+			"html/index.html": {
+				"resources": [
+					"/static/img/news/xjpsj_bg.png"
+				],
+				"refer": [
+					"html/me/set.html",
+					"guide/guide.html",
+					"html/news/detail.html"
+				],
+				"priority": 0
+			},
+			"guide/guide.html": {
+				"resources": [],
+				"refer": [
+					"html/index.html"
+				],
+				"priority": 0
+			},
+			"html/news/detail.html": {
+				"resources": [
+					"/static/img/news/xjpsj_bg.png"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"html/news/seek.html",
+				"static/css/html/community/AttentionList.48dcce3397bc14ca8fc8c0c332c0a43e.css",
+				"static/css/html/lives/iframe.79a9f087837166992aece6f3a0d81560.css",
+				"static/js/html/news/add.77cfd3d4695cfcd7d97b.js",
+				"static/js/html/lives/iframe.bd0f6465ff90286a3f9a.js",
+				"static/css/html/me/personage.4e78d88de936423d1f5d6ad3ef8209dc.css",
+				"static/img/service/dianhua.png",
+				"html/services/Robot.html",
+				"static/css/html/services/questions.79a9f087837166992aece6f3a0d81560.css",
+				"static/js/html/services/questionAnswer.82bc2197cf85822f20a9.js",
+				"static/js/html/me/us.978f034ad20508f25f05.js",
+				"static/css/html/criticism.1321b6b8e83571ec392b12af4ad41336.css",
+				"static/js/html/services/certificate.2b9b422b1c9f84462f56.js",
+				"html/services/special.html",
+				"static/img/service/onlineretailers.png",
+				"static/js/html/news/detail.2a0d5384c2d40888a979.js",
+				"static/css/html/services/special.79a9f087837166992aece6f3a0d81560.css",
+				"html/services/questionAnswer.html",
+				"static/js/html/community/data.8b899b291366ff265c87.js",
+				"html/services/certificate.html",
+				"html/community/Homepage.html",
+				"static/css/html/me/feedback.4e78d88de936423d1f5d6ad3ef8209dc.css",
+				"html/lives/iframe.html",
+				"static/css/html/news/detail.9626b87f5d4bf9e190715d76d1d16dd3.css",
+				"static/img/service/judicial.png",
+				"static/fonts/iconfont.eot",
+				"static/img/service/more.png",
+				"static/img/service/huji.png",
+				"static/css/html/login.48dcce3397bc14ca8fc8c0c332c0a43e.css",
+				"static/img/service/hunyin.png",
+				"static/img/service/qa.png",
+				"static/img/service/tianqi.png",
+				"html/me/us.html",
+				"static/js/html/login.bfedeb99a1845f4c06f2.js",
+				"static/js/html/news/seek.b13d26cb5869ada3337c.js",
+				"html/services/questions.html",
+				"index.html",
+				"static/css/html/community/characters.48dcce3397bc14ca8fc8c0c332c0a43e.css",
+				"static/css/html/register.48dcce3397bc14ca8fc8c0c332c0a43e.css",
+				"static/css/html/me/set.4e78d88de936423d1f5d6ad3ef8209dc.css",
+				"static/img/service/jiaofei.png",
+				"static/js/html/community/Fans.b0141dfc23e298fa48de.js",
+				"static/img/service/credentials.png",
+				"static/img/service/intellectual.png",
+				"html/register.html",
+				"static/img/service/jiqi.png",
+				"static/js/html/community/Homepage.ac0fd06a0f756a72417c.js",
+				"static/js/html/services/certificateJson.92b8ffcf1d99ed8ec782.js",
+				"static/js/html/services/Robot.b87aae5fa97e4a86ded1.js",
+				"static/js/html/me/set.f69af196e2c37bbc050b.js",
+				"static/css/html/services/Robot.79a9f087837166992aece6f3a0d81560.css",
+				"static/js/vendor.5cf60bac48419faf0e50.js",
+				"static/img/service/retire.png",
+				"html/criticism.html",
+				"html/me/feedback.html",
+				"static/js/html/me/feedback.d611dd906c3f2e534451.js",
+				"static/img/service/shebao.png",
+				"static/js/html/services/questions.92cd6a30f5af19dedac1.js",
+				"static/css/html/index.9626b87f5d4bf9e190715d76d1d16dd3.css",
+				"static/js/html/services/special.73ad2668f96304dfb886.js",
+				"html/login.html",
+				"html/community/characters.html",
+				"static/js/html/register.5b9cdad2cd87f161d961.js",
+				"static/css/html/services/certificate.79a9f087837166992aece6f3a0d81560.css",
+				"html/community/Fans.html",
+				"static/img/service/a.png",
+				"static/js/html/community/characters.d4ac4b29fc2420542e69.js",
+				"static/img/service/treat.png",
+				"static/css/html/me/review.4e78d88de936423d1f5d6ad3ef8209dc.css",
+				"static/js/html/me/review.d434d86a27c9816eb0d1.js",
+				"static/js/manifest.34180070b108652096db.js",
+				"static/css/html/news/add.9626b87f5d4bf9e190715d76d1d16dd3.css",
+				"static/css/html/me/us.79a9f087837166992aece6f3a0d81560.css",
+				"static/img/service/Q.png",
+				"html/me/personage.html",
+				"static/js/html/community/AttentionList.564d5e07cb869dc9c145.js",
+				"static/img/service/zhuanti.png",
+				"static/js/html/me/personage.ce35510fea1275c2776d.js",
+				"static/js/html/index.7cfdf58494330baa4549.js",
+				"static/css/html/services/questionAnswer.79a9f087837166992aece6f3a0d81560.css",
+				"html/me/review.html",
+				"html/community/AttentionList.html",
+				"static/css/html/community/Homepage.79a9f087837166992aece6f3a0d81560.css",
+				"static/js/html/criticism.66713c4b8983fd46d41f.js",
+				"static/css/html/community/Fans.48dcce3397bc14ca8fc8c0c332c0a43e.css",
+				"static/css/html/news/seek.5aebcaec4c82ed62649d83e59a74876f.css",
+				"static/fonts/iconfont.ttf",
+				"html/news/add.html"
+			]
+		}
+	},
+	"unpackage": [
+		"js/update.json"
+	]
+}

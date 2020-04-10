@@ -1,0 +1,222 @@
+
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -ms-touch-select: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  touch-action: manipulation;
+  /* IE11+ 禁止双击缩放，关于移动端300ms延迟：https://github.com/ftlabs/fastclick */
+  -ms-touch-action: manipulation;
+  /* IE10+ 禁止双击缩放 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* IOS移动端禁止点击高亮 */
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* font-family: 'FZCYJ', Microsoft YaHei, STHeiti, Helvetica, Arial, sans-serif; */
+  font-family: Roboto,Helvetica, Arial, Microsoft YaHei, STHeiti,  sans-serif;
+  overflow: auto;
+  /* 用于 android4+，或其他设备 */
+  -webkit-overflow-scrolling: touch;
+  /* 用于 ios5+ */
+  -webkit-overflow-scrolling: touch;
+  /* 当手指从触摸屏上移开，会保持一段时间的滚动 */
+  -webkit-overflow-scrolling: auto;
+  /* 当手指从触摸屏上移开，滚动会立即停止 */
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+}
+
+img {
+  vertical-align: top;
+  border: 0;
+}
+
+header {
+  width: 100%;
+  height: .88rem;
+  box-sizing: content-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: .38rem;
+  /* font-weight: 600; */
+  text-align: center;
+  line-height: .88rem;
+  
+  /*background: -webkit-linear-gradient(top,rgba(215,75,40,1),rgba(215,75,40,0.8));*/
+  z-index: 9999;
+  color: #fff;
+  /*border-bottom: 1px solid rgba(215,75,40,0.8);*/
+  -ms-touch-action: none;
+}
+
+/* .contentNavFixed {
+  padding-top: 44px;
+} */
+.contentNavFixed{
+  padding-top: .88rem;
+  background: #f7f7f7;
+  padding-bottom: env(safe-area-inset-bottom);
+  overflow: scroll;
+}
+
+/* #share .functionItem {
+    padding-bottom: env(safe-area-inset-bottom);
+}
+#detail .tool {
+    padding-bottom: env(safe-area-inset-bottom);
+} */
+
+.com_contentNavFixed{
+  height: 100%;
+}
+.iback {
+  background: no-repeat center center;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABYBAMAAADxdE+xAAAAKlBMVEUAAAD///////////////////////////////////////////////////+Gu8ovAAAADXRSTlMAnpmUiYUCjY+Agmz+STNAqwAAAItJREFUWMPt1a0NgDAQxfEnIHwoFJoRWIQRSFiEERiBEUjYAwU1mNsFWf1Krur9fPOvuPYgIiJ/VSdY20VHLIC02ugfmehIYQ8fGfwjMx0pUyIdHblBOuhIa/cCzm49OI1zJB7xvxgOPtPGDD0v/MD4Zx74v2MUuTIB/v8rqjyZ2t4MKwn1CRERSfQBSKg384NRBT4AAAAASUVORK5CYII=");
+  background-size: 80%;
+}
+.ibackBack{
+  background: no-repeat center center;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAASFBMVEUAAABISUxISExISUxISUxHSUtHSEtHSEtHSEtHSEtHR0tFRkpHSUxHSEtHR0tGR0pHR0pISUxHSExHR0tHSkxISEtHSUxISUyMdpT/AAAAF3RSTlMA/Oz59fHmRT8zLCZcVlBKOeTbZGGjoaKKgnsAAABtSURBVDjLpdM3DsAgEERRkgEncN7739R07j4WbPtGAsGOaptgbvToxFfcRfBtEBfYLflYPPe4EZvAJyO65iu5Z5+LLz2+i74UzCH6VM0BPoIvyQl+yPZEAv++mxMZHFYKlpbXnovD1ePyPurvvImsBhH+aYB3AAAAAElFTkSuQmCC");
+  background-size: 30%;
+}
+.iBlackBack {
+  background: no-repeat center center;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEUAAABISUxISUxISUxISUxISUxISUxISUxISUxISUxISUxISUxISUxISUxISUxISUxISUxISUxISUxISUxISUxISUz6Q13EAAAAFXRSTlMA+/bq8eRhRj4zLVZSTDol7SnZoluaOJA4AAAAbElEQVQ4y6XTSxKAIAwDUMtHEPBv7n9V3XUXnNLtywwwNJNtkr+pZ4fYcZeJbwEuDfgSIOuIH5BGvPTcQ+qAn58/xPcImbmD+XSpmwJ6hP2S+kyeqDRRfiUacf1u88Jowry0PMGLw6vHy8vnBSNeBd2DrIbuAAAAAElFTkSuQmCC");
+  background-size: 35%;
+}
+.nvtt {
+  width: 70%;
+  height: 100%;
+  color: #fff;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.nvbt {
+  width: 15%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+
+a,
+blockquote,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+em,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+iframe,
+img,
+input,
+label,
+li,
+object,
+ol,
+p,
+q,
+small,
+span,
+strong,
+table,
+tbody,
+td,
+th,
+tr,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: 'FZCYJ','Helvetica Neue', Helvetica, Arial, sans-serif; */
+  font-family: Roboto,Helvetica, Arial, Microsoft YaHei, STHeiti,  sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  line-height: normal;
+}
+
+button,
+input,
+select,
+label {
+  vertical-align: middle;
+  outline: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+}
+
+a {
+  color: #333;
+  outline: none;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
